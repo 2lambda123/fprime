@@ -64,7 +64,7 @@ jobs:
            sudo apt-get update
            sudo apt-get install valgrind
     - name: F prime CI step
-      run: ./ci/tests/30-ints.bash
+      run: \/\.\/ci\/tests\/run-int-tests\.bash
     # Archive the outputs
     - name: 'Archive Logs'
       uses: actions/upload-artifact@v3
