@@ -41,7 +41,7 @@ jobs:
         fetch-depth: 0
     - uses: ./.github/actions/setup
     - name: F prime CI step
-      run: ./ci/tests/Ref.bash
+      run: \/\.\/ci\/tests\/run-ref-tests\.bash
     # Archive the outputs
     - name: 'Archive Logs'
       uses: actions/upload-artifact@v3
