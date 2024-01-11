@@ -21,6 +21,7 @@ jobs:
         fetch-depth: 0
     - uses: ./.github/actions/setup
     - name: F prime CI step
+      run: \/\.\/ci\/tests\/run-framework-tests\.bash
       run: ./ci/tests/Framework.bash
     # Archive the outputs
     - name: 'Archive Logs'
