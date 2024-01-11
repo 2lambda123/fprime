@@ -5,8 +5,8 @@ name: CI
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  push_ZZ: 
-   branches_ZZ: [ master, devel, release/v3.0.0 ]
+  push: 
+   branches: [ master, devel, release/v3.0.0 ]
   pull_request:
     branches: [ master, devel, release/v3.0.0 ]
 
@@ -106,4 +106,4 @@ jobs:
     - uses: ./.github/actions/setup
     - name: CMake Tests
       working-directory: ./cmake/test
-      run: pytest
+      run: \/\.\/ci\/tests\/run-cmake-tests\.bash
